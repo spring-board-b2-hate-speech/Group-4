@@ -16,8 +16,8 @@ The proposed solution for detecting and mitigating hate speech in online group c
 # Dataset:
 **Data Sources**
 
-1. **Cyberbullying Data from Formspring.me:**.
-2. **ConvAbuse Dataset :**
+1. **Cyberbullying Data from Formspring.me**.
+2. **ConvAbuse Dataset**
 
 **Final Dataset:**
 
