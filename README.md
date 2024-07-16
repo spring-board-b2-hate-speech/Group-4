@@ -49,8 +49,8 @@ There is an imbalance in 'Label' column in the training dataset as there are 737
 This can be handled by using **Random Oversampler**.
 
 **After Oversampling:**
-* Label 0: 7370
-* Label 1: 7370
+* Label 0: 7099
+* Label 1: 7099
 
 # Embedding using GloVe Embeddings:
 GloVe (Global Vectors for Word Representation) is an unsupervised learning algorithm for obtaining vector representations for words. It was developed by researchers at Stanford University and is designed to capture the semantic relationships between words based on their co-occurrence in large text corpora.
