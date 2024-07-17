@@ -90,11 +90,27 @@ GloVe.6B.200d.txt is one of the pre-trained GloVe models, where:
 **Key Metric-**
 
 * **ROC AUC Score:** The Receiver Operating Characteristic  Area Under the Curve (ROC AUC) score is the area under the ROC curve. It sums up how well a model can produce relative scores to discriminate between positive or negative instances across all classification thresholds. The ROC AUC score ranges from 0 to 1.
+  * **Scores:**
+    * **Machine Learning Model – 0.75**
+    * **Deep Learning Model – 0.82**
 
 **Other Metrics-**
 * **Precision:** The ratio of true positive predictions to the total predicted positives. Important in scenarios where false positives (incorrectly classifying non-hate speech as hate speech) need to be minimized.
+  * **Scores:**
+    * **ML Model – 0.70**
+    * **DL Model – 0.79**
+ 
 * **Recall (Sensitivity):** The ratio of true positive predictions to the total actual positives. Crucial in scenarios where it's important to identify as many hate speech instances as possible, even at the cost of some false positives.
-* **F1 Score:** The harmonic mean of precision and recall, providing a single metric that balances both. Useful when you need to balance precision and recall in a specific way. 
+  *  **Scores:**
+     * **ML Model – 0.76**
+     * **DL Model – 0.77**
+
+* **F1 Score:** The harmonic mean of precision and recall, providing a single metric that balances both. Useful when you need to balance precision and recall in a specific way.
+  * **Scores:**
+    * **ML Model – 0.74**
+    * **DL Model – 0.80**
+ 
+In summary, while precision, recall, and F1 score offer specific insights at a particular threshold, ROC-AUC offers a holistic view of the model's performance across all possible thresholds, making it an essential complement to these other metrics in hate speech detection tasks.
 
 
 
