@@ -68,6 +68,17 @@ GloVe.6B.200d.txt is one of the pre-trained GloVe models, where:
 * Vocabulary Size: 400,000 unique words.
 
 # Modeling:
+# Machine Learning Models:
+* **Support Vector Machines**
+* **Naive Bayes**
+* **Logistic Regression**
+
+# Deep Learning Models: 
+* **Convolutional Neural Networks (CNN)** 
+* **Recurrent Neural Networks (RNN)** 
+* **Bidirectional Long Short Term Memory (LSTM) Model**
+
+# Final Model:
 **Bidirectional Long Short Term Memory (LSTM) Model**- BiLSTM networks are particularly well-suited for text classification tasks, such as automated hate speech detection, due to several compelling reasons:
 * Bidirectional LSTM networks read the input sequence both forward and backward, enabling them to capture context from both directions.
 * Bidirectional LSTM networks are capable of retaining and utilizing long-term dependencies in text, making them more effective for understanding the nuanced relationships in hate speech.
@@ -76,39 +87,23 @@ GloVe.6B.200d.txt is one of the pre-trained GloVe models, where:
 
 ![image](https://github.com/user-attachments/assets/7ced053a-1884-4925-b05f-30603aa3c0be)
 
-* The very first layer of the network is the embedding layer. It uses pre-trained word embeddings by providing the prepared embedding matrix as beginning weights.
-* The next layer is a bidirectional LSTM (Long Short-Term Memory) with 256 units. This layer captures information from both past and future states of the sequence.
-* A dropout layer with a rate of 0.4 follows the first bidirectional LSTM layer. It is used to prevent overfitting by randomly setting a fraction of input units to 0 at each update during training.
-* The second bidirectional LSTM layer has 128 units. This layer captures information from both past and future states of the sequence.
-* A dropout layer with a rate of 0.3 follows the second bidirectional LSTM layer to further prevent overfitting.
-* The following layer is a dense layer with 128 units and a ReLU (Rectified Linear Unit) activation function. It introduces non-linearity to the model and helps in learning complex patterns.
-* Another dense layer with 32 units and a ReLU activation function.
-* The last layer is the dense layer with one output unit and a sigmoid activation function. The sigmoid function outputs a value between 0 and 1. This is perfect for binary classification because it can be interpreted as the probability of the input belonging to two classes (0 and 1).
 
 # Evaluation Metrics:
 
 **Key Metric-**
 
 * **ROC AUC Score:** The Receiver Operating Characteristic  Area Under the Curve (ROC AUC) score is the area under the ROC curve. It sums up how well a model can produce relative scores to discriminate between positive or negative instances across all classification thresholds. The ROC AUC score ranges from 0 to 1.
-  * **Scores:**
-    * **Machine Learning Model – 0.75**
-    * **Deep Learning Model – 0.82**
+  * **Scores: 0.82**
 
 **Other Metrics-**
 * **Precision:** The ratio of true positive predictions to the total predicted positives. Important in scenarios where false positives (incorrectly classifying non-hate speech as hate speech) need to be minimized.
-  * **Scores:**
-    * **ML Model – 0.70**
-    * **DL Model – 0.79**
+  * **Scores: 0.79**
  
 * **Recall (Sensitivity):** The ratio of true positive predictions to the total actual positives. Crucial in scenarios where it's important to identify as many hate speech instances as possible, even at the cost of some false positives.
-  *  **Scores:**
-     * **ML Model – 0.76**
-     * **DL Model – 0.77**
+  *  **Scores: 0.77**
 
 * **F1 Score:** The harmonic mean of precision and recall, providing a single metric that balances both. Useful when you need to balance precision and recall in a specific way.
-  * **Scores:**
-    * **ML Model – 0.74**
-    * **DL Model – 0.80**
+  * **Scores: 0.80**
  
 In summary, while precision, recall, and F1 score offer specific insights at a particular threshold, ROC-AUC offers a holistic view of the model's performance across all possible thresholds, making it an essential complement to these other metrics in hate speech detection tasks.
 
