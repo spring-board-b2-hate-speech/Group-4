@@ -52,17 +52,4 @@ This can be handled by using **Random Oversampler**.
 * Label 0: 8402
 * Label 1: 8402
 
-# Embedding using GloVe Embeddings:
-GloVe (Global Vectors for Word Representation) is an unsupervised learning algorithm for obtaining vector representations for words. It was developed by researchers at Stanford University and is designed to capture the semantic relationships between words based on their co-occurrence in large text corpora.
-**glove.6B.200d.txt:**
-GloVe.6B.200d.txt is one of the pre-trained GloVe models, where:
 
-* 6B: The model was trained on a corpus of 6 billion tokens (words).
-
-* 200d: Each word is represented by a 200-dimensional vector.
-
-*Details of GloVe.6B.200d.txt:*
-
-* Corpus: Common Crawl (a dataset containing 6 billion tokens).
-
-* Vocabulary Size: 400,000 unique words.
